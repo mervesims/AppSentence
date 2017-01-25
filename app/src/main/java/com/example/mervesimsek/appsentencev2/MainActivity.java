@@ -3,6 +3,7 @@ package com.example.mervesimsek.appsentencev2;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -108,8 +109,16 @@ public class MainActivity extends AppCompatActivity
             startActivity(i);
         } else if (id == R.id.nav_appsims) {
 
-        } else if (id == R.id.nav_share) {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.appsims.com"));
+            startActivity(browserIntent);
 
+        } else if (id == R.id.nav_share) {
+            String message = "https://play.google.com/store/apps/details?id=com.md.kafanicalistir";
+            Intent share = new Intent(Intent.ACTION_SEND);
+            share.setType("text/plain");
+            share.putExtra(Intent.EXTRA_TEXT, message);
+
+            startActivity(Intent.createChooser(share, "Title of the dialog the system will open"));
         } else if (id == R.id.nav_send) {
 
         }
