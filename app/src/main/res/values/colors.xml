@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="appsimsturuncu">#f7b354</color>
+    <color name="appsimsmavi">#1b6089</color>
+    <color name="appsimsmavidark">#135175</color>
+    <color name="white">#ffffff</color>
+    <color name="backgroundgrey">#fafafa</color>
+    <color name="linegreen">#45b1a7</color>
+</resources>

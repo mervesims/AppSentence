@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AppSentence</string>
+    <string name="addsentences">Add Sentence</string>
+    <string name="searchsentences">Search Sentence</string>
+    <string name="aboutcompany">About AppSims</string>
+    <string name="searchdetail">Detail</string>
+    <string name="search_hint">Search the Sentence</string>
+    <string-array name="string_sentences">
+        <item>Hello</item>
+        <item>How are you?</item>
+        <item>See You</item>
+        <item>Bless You</item>
+        <item>See you soon</item>
+    </string-array>
+    <string name="title_activity_sliding_menu">sliding_menu</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

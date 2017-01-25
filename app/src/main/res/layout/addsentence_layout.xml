@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appsimsturuncu">
+
+    <TextView
+        android:text="English Sentence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="21dp"
+        android:id="@+id/textView2"
+        android:textColor="@color/appsimsmavi"/>
+
+    <TextView
+        android:text="Turkish Sentence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/editText2"
+        android:layout_alignStart="@+id/editText3"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/appsimsmavi"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:height="100dp"
+        android:width="320dp"
+        android:layout_marginLeft="1dp"
+        android:id="@+id/editText3"
+        android:background="@color/backgroundgrey"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/editText2" />
+
+
+
+    <TextView
+        android:background="@color/linegreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textColor="@color/appsimsmavi"
+        android:layout_below="@+id/editText2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignEnd="@+id/editText2"
+        android:height="8px"/>
+
+
+    <Button
+        android:text="Save"
+        android:background="@drawable/button5"
+        android:textColor="@color/backgroundgrey"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="220dp"
+        android:onClick="gec2"/>
+
+    <TextView
+        android:background="@color/appsimsmavidark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textColor="@color/appsimsmavi"
+        android:height="8px"
+        android:width="320dp"
+        android:layout_below="@+id/editText3"
+        android:layout_alignStart="@+id/editText3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:height="100dp"
+        android:width="320dp"
+        android:layout_marginLeft="1dp"
+        android:id="@+id/editText2"
+        android:layout_marginTop="12dp"
+        android:background="#fafafa"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+
+
+</RelativeLayout>
