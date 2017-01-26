@@ -108,6 +108,11 @@ public class MainActivity extends AppCompatActivity
             Intent i = new Intent(MainActivity.this,AddSentence_Activity.class);
             startActivity(i);
         }
+        else if (id == R.id.nav_cat)
+        {
+            Intent i = new Intent(MainActivity.this,CategoryActivity.class);
+            startActivity(i);
+        }
         else if (id == R.id.nav_search) {
             Intent i = new Intent(MainActivity.this,OtherActivity.class);
             startActivity(i);

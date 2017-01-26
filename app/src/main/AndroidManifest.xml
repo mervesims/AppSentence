@@ -38,6 +38,16 @@
         </activity>
 
         <activity
+            android:name=".CategoryActivity"
+            android:label="@string/categories">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name=".OtherActivity"
             android:label="Search Sentences">
             <meta-data

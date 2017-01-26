@@ -5,6 +5,7 @@
     <string name="aboutcompany">About AppSims</string>
     <string name="searchdetail">Detail</string>
     <string name="search_hint">Search the Sentence</string>
+    <string name="categories">Categories</string>
     <string-array name="string_sentences">
         <item>Hello</item>
         <item>How are you?</item>
@@ -18,4 +19,18 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <string-array name="string_category">
+        <item>Greetings</item>
+        <item>Introductions</item>
+        <item>Travel</item>
+        <item>Accommodation</item>
+        <item>Shopping</item>
+        <item>On The Telephone</item>
+        <item>Making Friends</item>
+        <item>Health</item>
+        <item>Business</item>
+        <item>Money</item>
+        <item>Education</item>
+    </string-array>
 </resources>
