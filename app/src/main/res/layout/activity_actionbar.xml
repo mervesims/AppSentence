@@ -5,11 +5,13 @@
     android:layout_height="match_parent"
     android:background="@color/appsimsturuncu">
 
+
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/listViewSentences"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+    />
 
 
     <android.support.design.widget.FloatingActionButton
@@ -20,4 +22,5 @@
         android:layout_margin="@dimen/fab_margin"
         app:srcCompat="@android:drawable/ic_menu_add"
         android:onClick="create"/>
+
 </LinearLayout>

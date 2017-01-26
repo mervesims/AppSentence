@@ -10,11 +10,14 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.app.SearchManager;
 import android.widget.SearchView;
 import android.widget.SearchView.OnQueryTextListener;
+import android.widget.Toast;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -46,11 +49,10 @@ public class OtherActivity extends AppCompatActivity {
         create.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent srcintent = new Intent(OtherActivity.this,AddSentence_Activity.class);
+                Intent srcintent = new Intent(OtherActivity.this, AddSentence_Activity.class);
                 startActivity(srcintent);
             }
         });
-
 
 
         ListView lv = (ListView) findViewById(R.id.listViewSentences);
@@ -62,14 +64,42 @@ public class OtherActivity extends AppCompatActivity {
                 android.R.layout.simple_list_item_1,
                 arraySentences);
         lv.setAdapter(adapter);
+
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (position)
+                {
+                    case 0:
+                        Toast.makeText(getApplicationContext(),"Merhaba",Toast.LENGTH_SHORT).show();
+                        break;
+
+                    case 1:
+                        Toast.makeText(getApplicationContext(),"Nasılsın?",Toast.LENGTH_SHORT).show();
+                        break;
+                    case 2:
+                        Toast.makeText(getApplicationContext(),"Görüşürüz",Toast.LENGTH_SHORT).show();
+                        break;
+                    case 3:
+                        Toast.makeText(getApplicationContext(),"Çok Yaşa!",Toast.LENGTH_SHORT).show();
+                        break;
+                    case 4:
+                        Toast.makeText(getApplicationContext(),"Sonra Görüşürüz",Toast.LENGTH_SHORT).show();
+                        break;
+                }
+
+            }
+        });
+
+
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater =getMenuInflater();
-        inflater.inflate(R.menu.menu_search,menu);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_search, menu);
         MenuItem item = menu.findItem(R.id.menuSearch);
-        SearchView searchView = (SearchView)item.getActionView();
+        SearchView searchView = (SearchView) item.getActionView();
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
@@ -86,3 +116,4 @@ public class OtherActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 }
+

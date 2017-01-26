@@ -99,28 +99,33 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_about) {
+        if (id == R.id.nav_about)
+        {
 
-        } else if (id == R.id.nav_add) {
+        }
+        else if (id == R.id.nav_add)
+        {
             Intent i = new Intent(MainActivity.this,AddSentence_Activity.class);
             startActivity(i);
-        } else if (id == R.id.nav_search) {
+        }
+        else if (id == R.id.nav_search) {
             Intent i = new Intent(MainActivity.this,OtherActivity.class);
             startActivity(i);
-        } else if (id == R.id.nav_appsims) {
+        }
+        else if (id == R.id.nav_appsims)
+        {
 
             Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.appsims.com"));
             startActivity(browserIntent);
 
-        } else if (id == R.id.nav_share) {
+        }
+        else if (id == R.id.nav_share) {
             String message = "https://play.google.com/store/apps/details?id=com.md.kafanicalistir";
             Intent share = new Intent(Intent.ACTION_SEND);
             share.setType("text/plain");
             share.putExtra(Intent.EXTRA_TEXT, message);
 
             startActivity(Intent.createChooser(share, "Title of the dialog the system will open"));
-        } else if (id == R.id.nav_send) {
-
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
