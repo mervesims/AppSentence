@@ -93,6 +93,15 @@
         android:layout_below="@+id/textView2"
         android:layout_alignStart="@+id/textView2" />
 
+    <Spinner
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="38dp"
+        />
 
 
 </RelativeLayout>
