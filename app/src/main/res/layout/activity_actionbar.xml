@@ -3,24 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/appsimsturuncu">
+    android:background="@color/appsimsturuncu"
+    android:weightSum="1">
 
 
     <ListView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="416dp"
         android:id="@+id/listViewSentences"
-        android:layout_weight="1"
-    />
+        android:layout_weight="0.79" />
 
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/btncreate"
-        android:layout_width="wrap_content"
+    <Button
+        android:background="@drawable/pl2"
+        android:layout_width="64dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_menu_add"
-        android:onClick="create"/>
+        android:id="@+id/btnadd"
+        android:layout_marginLeft="280dp"
+        android:onClick="gec3"
+        />
 
 </LinearLayout>

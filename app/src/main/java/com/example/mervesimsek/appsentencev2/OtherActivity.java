@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.app.SearchManager;
 import android.widget.SearchView;
@@ -31,29 +32,18 @@ public class OtherActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        FloatingActionButton create;
+        Button gec3;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_actionbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.btncreate);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Create a new sentence", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
-
-        create = (FloatingActionButton) findViewById(R.id.btncreate);
-        create.setOnClickListener(new View.OnClickListener() {
+        gec3 = (Button) findViewById(R.id.btnadd);
+        gec3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent srcintent = new Intent(OtherActivity.this, AddSentence_Activity.class);
-                startActivity(srcintent);
+                Intent i = new Intent(OtherActivity.this, AddSentence_Activity.class);
+                startActivity(i);
             }
         });
-
 
         ListView lv = (ListView) findViewById(R.id.listViewSentences);
         ArrayList<String> arraySentences = new ArrayList<>();
