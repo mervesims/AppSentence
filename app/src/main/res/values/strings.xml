@@ -20,17 +20,4 @@
 
     <string name="action_settings">Settings</string>
 
-    <string-array name="string_category">
-        <item>Greetings</item>
-        <item>Introductions</item>
-        <item>Travel</item>
-        <item>Accommodation</item>
-        <item>Shopping</item>
-        <item>On The Telephone</item>
-        <item>Making Friends</item>
-        <item>Health</item>
-        <item>Business</item>
-        <item>Money</item>
-        <item>Education</item>
-    </string-array>
 </resources>
