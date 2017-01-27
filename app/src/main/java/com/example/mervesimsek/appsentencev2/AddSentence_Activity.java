@@ -33,11 +33,13 @@ public class AddSentence_Activity extends AppCompatActivity implements AdapterVi
         //Font düzenlemesi için burayı incele http://stackoverflow.com/questions/34572810/how-to-change-default-font-of-the-android-app
         TextView textView3 = (TextView) findViewById(R.id.textView2);
         TextView textView4 = (TextView) findViewById(R.id.textView3);
+        TextView textView6 = (TextView) findViewById(R.id.textView6);
 
 
         Typeface font = Typeface.createFromAsset(context.getAssets(), "fonts/neuropol.ttf");
         textView3.setTypeface(font);
         textView4.setTypeface(font);
+        textView6.setTypeface(font);
 
 
         gec2 = (Button) findViewById(R.id.button2);

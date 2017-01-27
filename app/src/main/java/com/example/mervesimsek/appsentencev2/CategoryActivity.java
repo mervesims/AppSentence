@@ -41,7 +41,7 @@ public class CategoryActivity extends AppCompatActivity {
         create.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent srcint = new Intent(CategoryActivity.this, AddSentence_Activity.class);
+                Intent srcint = new Intent(CategoryActivity.this, CardActivity.class);
                 startActivity(srcint);
             }
         });
@@ -80,4 +80,6 @@ public class CategoryActivity extends AppCompatActivity {
         });
         return super.onCreateOptionsMenu(menu);
     }
+
+
 }
